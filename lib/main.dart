@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:personnel/Counter/counter.dart';
+import 'package:personnel/Widgets/EmployInfor.dart';
 import 'package:personnel/home.dart';
 import 'package:provider/provider.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => CounterModel(),
       child: MaterialApp(
-        home: MyHome(),
+        home: EmployInfor(),
       ),
     );
   }
