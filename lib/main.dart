@@ -10,6 +10,7 @@ import 'package:provider/provider.dart';
 import '/models/user_interface.dart';
 import '/Widgets/homepage.dart';
 import '/Widgets/profile.dart';
+import '/Widgets/font_size.dart';
 import 'package:personnel/Widgets/EmployInfor.dart';
 
 void main() {
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
           "/": (context) => MyHomePage(),
           "/profile": (context) => ProfileScreen(),
           "/employee_imfo": (context) => EmployInfor(),
+          "/font_size": (context) => MyFontSize(),
         }
       ),
     );

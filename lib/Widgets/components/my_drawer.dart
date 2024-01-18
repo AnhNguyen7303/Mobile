@@ -69,7 +69,7 @@ class MyDrawer extends StatelessWidget {
                 leading: Icon(Icons.settings),
                 title: Text("Cài đặt"),
                 onTap: () {
-                  Navigator.of(context).popAndPushNamed("/");
+                  Navigator.of(context).popAndPushNamed("/font_size");
                 },
               ),
             ],
