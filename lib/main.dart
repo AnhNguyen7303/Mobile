@@ -1,8 +1,8 @@
-// import 'package:flutter/material.dart';
-// import 'package:personnel/Counter/counter.dart';
-// import 'package:personnel/Widgets/EmployInfor.dart';
-// import 'package:personnel/home.dart';
-// import 'package:provider/provider.dart';
+// // import 'package:flutter/material.dart';
+// // import 'package:personnel/Counter/counter.dart';
+// // import 'package:personnel/Widgets/EmployInfor.dart';
+// // import 'package:personnel/home.dart';
+// // import 'package:provider/provider.dart';
 
 // import 'Widgets/Employ.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +16,6 @@ import 'package:personnel/Widgets/EmployInfor.dart';
 void main() {
   runApp( MyApp());
 }
-
 
 class MyApp extends StatelessWidget {
   @override

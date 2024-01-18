@@ -29,7 +29,7 @@ class MyDrawer extends StatelessWidget {
                   accountName: const Text('Nguyễn Đức Anh'),
                   accountEmail: const Text('21012478@st.phenikaa-uni.edu.vn'),
                   currentAccountPicture: CircleAvatar(
-                    backgroundImage: AssetImage('images/user2.png'),
+                    backgroundImage: AssetImage('assets/images/user2.png'),
                   ),
                   decoration: BoxDecoration(
                     color: ui.appBarColor,

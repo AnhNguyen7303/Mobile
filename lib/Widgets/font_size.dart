@@ -23,6 +23,14 @@ class MyFontSize extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                 
+                  Text(
+                    "Tài khoản",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  SizedBox(height: 20),
                   buildDropdownButton(
                     labelText: "Cỡ chữ",
                     value: ui.strFontSize,

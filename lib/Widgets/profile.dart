@@ -92,7 +92,7 @@ class ProfileScreen extends StatelessWidget {
             backgroundColor: ui.appBarColor,
             iconTheme: IconThemeData(color: Colors.white),
             title: Text(
-              "Employee Information",
+              "Thông tin tài khoản",
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white,
@@ -112,11 +112,14 @@ class ProfileScreen extends StatelessWidget {
                 itemProfile('Name', 'Nguyễn Đức Anh', CupertinoIcons.person),
                 const SizedBox(height: 10),
                 itemProfile('Phone', '0981402765', CupertinoIcons.phone),
+                const SizedBox(height: 10,),
+                itemProfile('Position', 'Quản lý', CupertinoIcons.briefcase_fill),
                 const SizedBox(height: 10),
                 itemProfile('Address', 'Hà Đông', CupertinoIcons.location),
                 const SizedBox(height: 10),
                 itemProfile('Email', '21012478@st.phenikaa-uni.edu.vn', CupertinoIcons.mail),
                 const SizedBox(height: 20,),
+                
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
