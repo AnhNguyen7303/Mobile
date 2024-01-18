@@ -1,39 +1,4 @@
-// import '/widgets/components/my_drawer.dart';
-// import '/models/user_interface.dart';
-// import 'package:flutter/material.dart';
-// import 'package:provider/provider.dart';
-
-// class MyHomePage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text("Home"),
-//         backgroundColor: Colors.deepPurple,
-//         foregroundColor: Colors.white,
-//       ),
-
-//       drawer: MyDrawer(),
-
-//       body: Consumer<UserInterface>(
-//         builder: (context, ui, child) {
-//           return Center(
-//             child: Text(
-//                 "Homepage",
-//                 style: TextStyle(
-//                   fontSize: ui.fontSize,
-//                 )
-//             ),
-//           );
-//         }
-//       )
-//     );
-//   }
-// }
-
-
 import '/widgets/components/my_drawer.dart';
-import '/widgets/components/bottomNavBar.dart';
 import '/models/user_interface.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -45,7 +10,7 @@ class MyHomePage extends StatelessWidget {
       builder: (context, ui, child) {
         return Scaffold(
             appBar: AppBar(
-              title: Text("My Homepage"),
+              title: Text("Tổng quan"),
               backgroundColor: ui.appBarColor,
               foregroundColor: Colors.white,
             ),
@@ -54,12 +19,12 @@ class MyHomePage extends StatelessWidget {
             // bottomNavigationBar: MyBottomNavBar(),
 
             body: Container(
-            // color: ui.backGroundHomePage, 
+            color: ui.backGroundHomePage, 
             // color: Color()
-            color: Color(0xFF0072BC),
+            // color: Color(0xFF0072BC),
             child: Center(
               child: Text(
-                "Home",
+                "Nội dung trang tổng quan",
                 style: TextStyle(
                   fontSize: ui.fontSize,
                   // backgroundColor: Colors.transparent, // Để tránh màu nền gây ảnh hưởng đến văn bản

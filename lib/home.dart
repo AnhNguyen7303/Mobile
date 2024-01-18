@@ -116,7 +116,7 @@ class MyHome extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage("assets/image/phongban.jpg"),
+                        image: AssetImage("assets/images/phongban.jpg"),
                       ),
                       boxShadow: [
                         BoxShadow(

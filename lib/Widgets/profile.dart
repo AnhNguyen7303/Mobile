@@ -7,6 +7,18 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 50,
+        backgroundColor: Colors.blue,
+        iconTheme: IconThemeData(color: Colors.white), // Đặt màu cho biểu tượng
+        title: Text(
+          "Employee Information",
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.white, // Đặt màu cho văn bản
+          ),
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -65,3 +77,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+
