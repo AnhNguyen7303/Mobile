@@ -1,24 +1,35 @@
-import 'package:flutter/material.dart';
-import 'package:personnel/Counter/counter.dart';
-import 'package:personnel/Widgets/EmployInfor.dart';
-import 'package:personnel/home.dart';
-import 'package:provider/provider.dart';
+// // import 'package:flutter/material.dart';
+// // import 'package:personnel/Counter/counter.dart';
+// // import 'package:personnel/Widgets/EmployInfor.dart';
+// // import 'package:personnel/home.dart';
+// // import 'package:provider/provider.dart';
 
-import 'Widgets/Employ.dart';
+// import 'Widgets/Employ.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '/models/user_interface.dart';
+import '/Widgets/homepage.dart';
+import '/Widgets/profile.dart';
+import '/Widgets/font_size.dart';
+import 'package:personnel/Widgets/EmployInfor.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => CounterModel(),
+        create: (context) => UserInterface(),
       child: MaterialApp(
-        home: EmployInfor(),
+        initialRoute: "/",
+        routes: {
+          "/": (context) => MyHomePage(),
+          "/profile": (context) => ProfileScreen(),
+          "/employee_imfo": (context) => EmployInfor(),
+          "/font_size": (context) => MyFontSize(),
+        }
       ),
     );
   }
