@@ -33,7 +33,7 @@ class _EmployInforState extends State<EmployInfor> {
                     shape: BoxShape.circle,
                     color: Colors.black12,
                     image: DecorationImage(
-                      image: AssetImage("assets/image/nhanvien.png"),
+                      image: AssetImage("assets/images/nhanvien.png"),
                       fit: BoxFit.cover
                     )
                   ),
