@@ -6,14 +6,14 @@ import 'package:personnel/NhanVien.dart';
 import 'package:personnel/Widgets/FormAddEmploy.dart';
 import 'package:personnel/Widgets/FormEdit.dart';
 
-class QuanLyNhanVien extends StatefulWidget {
-  const QuanLyNhanVien({super.key});
+class Employee extends StatefulWidget {
+  const Employee({super.key});
 
   @override
-  State<QuanLyNhanVien> createState() => _QuanLyNhanVienState();
+  State<Employee> createState() => _EmployeeState();
 }
 
-class _QuanLyNhanVienState extends State<QuanLyNhanVien> {
+class _EmployeeState extends State<Employee> {
 
   List<NhanVien> danhSachNhanVien = [
     NhanVien(

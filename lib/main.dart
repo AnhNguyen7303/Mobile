@@ -6,6 +6,7 @@
 
 // import 'Widgets/Employ.dart';
 import 'package:flutter/material.dart';
+import 'package:personnel/Widgets/Employ.dart';
 import 'package:provider/provider.dart';
 import '/models/user_interface.dart';
 import '/Widgets/homepage.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         routes: {
           "/": (context) => MyHomePage(),
           "/profile": (context) => ProfileScreen(),
-          "/employee_imfo": (context) => EmployInfor(),
+          "/employee_imfo": (context) => Employee(),
           "/font_size": (context) => MyFontSize(),
         }
       ),
